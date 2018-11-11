@@ -36,10 +36,6 @@ html {
   background: var(--text-color); /* WebKit/Blink Browsers */
 }
 
-body {
-  padding: 40px;
-}
-
 p {
   text-align: center;
   font-size: 8px;
@@ -60,10 +56,10 @@ p {
 }
 
 #naz-name {
-  font-size: 19.4vw;
+  font-size: 20.2vw;
   position: fixed;
-  bottom: -8.5vw;
-  margin-bottom: 0;
+  bottom: -10vw;
+  margin: 0px;
 }
 
 .naz-profession {
