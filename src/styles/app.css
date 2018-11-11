@@ -56,15 +56,16 @@ p {
 }
 
 #naz-name {
-  font-size: 20.2vw;
+  font-size: 16.4vw;
   position: fixed;
-  bottom: -10vw;
+  bottom: -9vw;
   margin: 0px;
 }
 
 .naz-profession {
   text-align: right;
-  font-size: 5vw;
+  font-size: 4.8vw;
+  margin: 20px;
   /* color: rgb(1, 41, 63); */
 }
 
