@@ -1,0 +1,99 @@
+:root {
+  --main-bg-light: rgb(9, 76, 114);
+  --main-bg-dark: rgb(1, 41, 63);
+  --text-color: #beba06;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+
+html {
+  font-family: "Montserrat Regular", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: var(--main-bg-light);
+
+  background: radial-gradient(
+    ellipse at bottom,
+    var(--main-bg-light) 0%,
+    var(--main-bg-dark) 100%
+  );
+}
+
+::selection {
+  background: var(--text-color); /* WebKit/Blink Browsers */
+}
+
+body {
+  padding: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 8px;
+}
+
+/* todo: pop this in a grid */
+.emoji-container {
+  margin-top: 10vw;
+  margin-left: 80vw;
+}
+.emoji {
+  font-size: 32px;
+}
+
+#welcome {
+  background-color: white;
+  animation: welcome 11s linear infinite;
+}
+
+#naz-name {
+  font-size: 19.4vw;
+  position: fixed;
+  bottom: -8.5vw;
+  margin-bottom: 0;
+}
+
+.naz-profession {
+  text-align: right;
+  font-size: 5vw;
+  /* color: rgb(1, 41, 63); */
+}
+
+#profession-word-web {
+  color: rgb(1, 41, 63);
+}
+
+#profession-word-developer {
+  color: #2286be;
+}
+
+@keyframes welcome {
+  50% {
+    opacity: 1;
+  } /* Turn off */
+  50.001% {
+    opacity: 0.4;
+  }
+
+  /* Keep off state for a short period */
+
+  52.999% {
+    opacity: 0.4;
+  } /* Turn back on */
+  53% {
+    opacity: 1;
+  }
+}
